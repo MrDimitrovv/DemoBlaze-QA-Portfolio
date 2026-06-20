@@ -212,7 +212,7 @@
       ]
     },
     {
-      "name": "Get cookie",
+      "name": "User validation",
       "item": [
         {
           "name": "Get cookie token",
