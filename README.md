@@ -9,11 +9,12 @@ The goal of the project is to demonstrate practical software testing skills acro
 * Manual Testing
 * API Testing (Postman)
 * API Automation
+* UI Automation (Selenium IDE)
 * UI Automation (Playwright)
 * Performance Testing (k6 / JMeter)
 * CI/CD Integration (GitHub Actions)
 
-The project simulates a real-world QA workflow, starting with test planning and manual test execution, followed by API validation, automation, defect reporting, and performance testing.
+The project follows a typical QA workflow, beginning with test planning and manual testing, followed by API testing, UI automation, performance testing, and CI/CD integration.
 
 ---
 
@@ -30,8 +31,10 @@ api/
 ├── DemoBlaze_API_Collection.json
 └── DemoBlaze_Variables.postman_environment.json
 
-automation/
-└── (coming soon)
+UIAutomation/
+├── Selenium IDE/
+│   └── DemoBlaze_PortfolioProject.side
+└── Playwright/
 
 performance/
 └── (coming soon)
@@ -111,10 +114,43 @@ These findings were documented as part of the learning process and troubleshooti
 
 ---
 
+## UI Automation
+
+UI automation is being implemented in two stages.
+
+### Selenium IDE
+
+The first stage focuses on recording and organizing the main user workflows to demonstrate automation fundamentals.
+
+Current Selenium IDE coverage includes:
+
+- User Login
+- User Registration
+- Product Categories
+- Product Details
+- Shopping Cart
+- Checkout
+- Homepage Verification
+- Contact Form
+
+A total of 21 UI automation scenarios have been recorded.
+
+### Playwright
+
+The Selenium IDE scenarios will be rewritten using Playwright and JavaScript following modern automation practices including:
+
+- Page Object Model
+- Assertions
+- Test Fixtures
+- Reusable Components
+
+---
+
 ## Tools & Technologies
 
 * Postman
-* Playwright (planned)
+* Selenium IDE
+* Playwright (In Progress)
 * Git & GitHub
 * GitHub Actions (planned)
 * JMeter / k6 (planned)
@@ -128,6 +164,7 @@ These findings were documented as part of the learning process and troubleshooti
 ✅ Test Planning
 ✅ Manual Testing
 ✅ API Testing (Postman)
+✅ UI Automation (Selenium IDE)
 
 🔄 UI Automation (Playwright)
 
