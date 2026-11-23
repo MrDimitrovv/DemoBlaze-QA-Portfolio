@@ -14,7 +14,6 @@ class LoginPage {
         await expect(this.loginModal).toBeVisible();
         await this.usernameField.fill(username);
         await this.passwordField.fill(password);
-        await expect(this.loginModal).toBeVisible();
         await this.loginSubmitButton.click();
     }
 }

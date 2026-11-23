@@ -55,7 +55,6 @@ DemoBlaze-QA-Portfolio/
 │
 └── ci-cd/
     └── GitHubActions/
-
 ---
 
 ## Manual Testing Coverage
@@ -150,20 +149,36 @@ A total of 21 UI automation scenarios have been recorded.
 
 ### Playwright
 
-The Selenium IDE scenarios will be rewritten using Playwright and JavaScript following modern automation practices including:
+The second stage involves rewriting the Selenium IDE scenarios using Playwright and JavaScript, following modern test automation practices.
 
-- Page Object Model
-- Assertions
-- Test Fixtures
-- Reusable Components
+The Playwright framework currently includes:
+
+JavaScript and Playwright Test
+
+Page Object Model (POM)
+
+Separate test specifications and page object classes
+
+Reusable page locators and methods
+
+Automated assertions using Playwright's expect
+
+Positive and negative login scenarios
+
+Browser dialog handling
+
+Chromium, Firefox, and WebKit projects configured for cross-browser execution
+
+The framework is currently under development, with additional test scenarios and synchronization improvements being implemented.
 
 ---
 
 ## Tools & Technologies
 
 * Postman
+* C# / RestSharp / NUnit
 * Selenium IDE
-* Playwright (In Progress)
+* Playwright / JavaScript
 * Git & GitHub
 * GitHub Actions (planned)
 * JMeter / k6 (planned)
