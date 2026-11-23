@@ -20,28 +20,41 @@ The project follows a typical QA workflow, beginning with test planning and manu
 
 ## Project Structure
 
-```text
-docs/
-├── TestPlan/
-├── TestCases/
-├── BugReports/
-└── Reports/
-
-api/
-├── DemoBlaze_API_Collection.json
-└── DemoBlaze_Variables.postman_environment.json
-
-UIAutomation/
-├── Selenium IDE/
-│   └── DemoBlaze_PortfolioProject.side
-└── Playwright/
-
-performance/
-└── (coming soon)
-
-ci-cd/
-└── (coming soon)
-```
+DemoBlaze-QA-Portfolio/
+│
+├── README.md
+│
+├── docs/
+│   ├── TestPlan/
+│   ├── TestCases/
+│   ├── BugReports/
+│   └── Reports/
+│
+├── api/
+│   ├── DemoBlaze_API_Collection.json
+│   └── DemoBlaze_Variables.postman_environment.json
+│
+├── UIAutomation/
+│   ├── Selenium IDE/
+│   │   └── DemoBlaze_PortfolioProject.side
+│   │
+│   └── Playwright/
+│       ├── tests/
+│       ├── pages/
+│       ├── fixtures/
+│       ├── utils/
+│       ├── playwright.config.js
+│       ├── package.json
+│       └── README.md
+│
+├── APIAutomation/
+│   └── CSharp/
+│
+├── performance/
+│   └── k6/
+│
+└── ci-cd/
+    └── GitHubActions/
 
 ---
 
