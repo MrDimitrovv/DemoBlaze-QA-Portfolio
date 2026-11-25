@@ -208,4 +208,4 @@ This project was developed as part of my transition from hospitality management 
 
 While working full-time as an Assistant Bar Manager at Hotel Saratz in Switzerland and simultaneously completing QA and Test Automation training through SoftUni, I dedicated my personal time to building a practical end-to-end QA portfolio project.
 
-The goal was not only to learn testing concepts, but to apply them in a realistic workflow covering manual testing, API testing, automation, performance testing, defect reporting, and CI/CD practices.
+The goal was not only to learn testing concepts, but to apply them in a realistic workflow covering manual testing, API testing, automation, performance testing, defect reporting, and CI/CD practices.gi

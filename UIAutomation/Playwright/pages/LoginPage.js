@@ -5,8 +5,8 @@ class LoginPage {
         this.usernameField = page.locator('#loginusername');
         this.passwordField = page.locator('#loginpassword');
         this.loginModal = page.locator('#logInModal');
-
         this.loginSubmitButton = page.locator('#logInModal .btn-primary');
+        
     }
 
     async login(username, password) {

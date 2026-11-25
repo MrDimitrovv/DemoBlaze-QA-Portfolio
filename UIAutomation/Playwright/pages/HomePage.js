@@ -3,6 +3,7 @@ class HomePage {
         this.page = page;
 
         this.loginButton = page.locator('#login2');
+        this.logoutButton = page.locator('#logout2');
         this.signUpButton = page.locator('#signin2');
         this.cartButton = page.locator('#cartur');
         this.aboutUsLink = page.getByRole('link', { name: 'About us' });

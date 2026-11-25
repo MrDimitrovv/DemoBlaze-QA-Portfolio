@@ -50,16 +50,31 @@ test('TC_UI_005 - Login with empty credentials', async ({ page }) => {
 
     const homePage = new HomePage(page);
     const loginPage = new LoginPage(page);
-    const dialogPromise = page.waitForEvent('dialog');
 
     await homePage.navigate();
     await homePage.openLogin();
 
+    page.once('dialog', async dialog => {
+        expect(dialog.message()).toBe('Please fill out Username and Password.');
+        await dialog.accept();
+    });
+
     await loginPage.login('', '');
+});
 
-    const dialog = await dialogPromise;
+test('TC_UI_006 - Verify logout functionality', async ({ page }) => {
 
-    expect(dialog.message()).toBe('Please fill out Username and Password.');
+   const homePage = new HomePage(page);
+    const loginPage = new LoginPage(page);
 
-    await dialog.accept();
+    await homePage.navigate();
+    await homePage.openLogin();
+
+    await loginPage.login('mrdimitrov1234', 'test1234');
+
+    await expect(homePage.logoutButton).toBeVisible();
+
+    await homePage.logoutButton.click();
+
+    await expect(homePage.loginButton).toBeVisible();
 });
