@@ -36,3 +36,26 @@ test('TC_UI_008 - Verify signup with valid credentials', async ({ page }) => {
     await expect(page).toHaveURL('https://www.demoblaze.com/');
 
 });
+
+test('TC_UI_009 - Verify signup with existing credentials', async ({ page }) => {
+
+    const homePage = new HomePage(page);
+    const signupPage = new SignupPage(page);
+    const dialogPromise = page.waitForEvent('dialog');
+    const username = 'mrdimitrov1234';
+    const password = 'test1234';
+
+    await homePage.navigate();
+    await homePage.openSignUp();
+
+    await signupPage.signup(username, password);
+
+    const dialog = await dialogPromise;
+
+    expect(dialog.message()).toBe('This user already exist.');
+
+    await dialog.accept();
+
+    await expect(page).toHaveURL('https://www.demoblaze.com/');
+
+});
